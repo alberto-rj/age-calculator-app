@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Age caculator app, challenge's solution from Frontend Mentor.">
+  <meta name="author" content="Frontend Mentor, Alberto Raúl José">
+  <meta name="keywords" content="Day, Month, Year, Age, Calculator, App">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <main class="main container">
+      <div class="card">
+        <h1 class="screen-reader-content">Calculate age</h1>
+        <form class="form">
+    
+          <fieldset class="form__content">
+    
+            <legend class="screen-reader-content">Date of birth</legend>
+    
+            <div id="day-group" class="form__group">
+              <label class="form__label" for="day">Day</label>
+              <input class="form__input" type="text" id="day" aria-placeholder="Must be 2 digits" placeholder="DD" maxlength="2" pattern="^\d{1,2}$" aria-required="true" required data-parent="#day-group" data-empty="#day-empty-error" data-invalid="#day-invalid-error" data-invalid-date="#date-invalid-error">
+              <p class="form__error" role="alert" id="day-empty-error">
+                This field is required
+              </p>
+              <p class="form__error" role="alert" id="day-invalid-error">
+                Must be a valid day
+              </p>
+              <p class="form__error" role="alert" id="date-invalid-error">
+                Must be a valid date
+              </p>
+            </div>
+            <div id="month-group" class="form__group">
+              <label class="form__label" for="month">Month</label>
+              <input class="form__input" type="text" id="month" aria-placeholder="Must be 2 digits" placeholder="MM" maxlength="2" pattern="^\d{1,2}$" aria-required="true" required data-parent="#month-group" data-empty="#month-empty-error" data-invalid="#month-invalid-error">
+              <p class="form__error" role="alert" id="month-empty-error">
+                This field is required
+              </p>
+              <p class="form__error" role="alert" id="month-invalid-error">
+                Must be a valid month
+              </p>
+            </div>
+            <div id="year-group" class="form__group">
+              <label class="form__label" for="year">Year</label>
+              <input class="form__input" type="text" id="year" aria-placeholder="Must be 4 digits" placeholder="YYYY" maxlength="4" pattern="^\d{1,4}$" aria-required="true" required data-parent="#year-group" data-empty="#year-empty-error" data-invalid="#year-invalid-error">
+              <p class="form__error" role="alert" id="year-empty-error">
+                This field is required
+              </p>
+              <p class="form__error" role="alert" id="year-invalid-error">
+                Must be in the past
+              </p>
+            </div>
+          </fieldset>
+          <button type="button" class="form__btn" aria-label="Calculate age"></button>
+        </form>
+    
+        <ul class="output-list">
+          <li class="output-item">
+            <span id="output-year" class="output-data">--</span> years
+          </li>
+          <li class="output-item">
+            <span id="output-month" class="output-data">--</span> months
+          </li>
+          <li class="output-item">
+            <span id="output-day" class="output-data">--</span> days
+          </li>
+        </ul>
+      </div>
+    </main>
+    
+    <footer class="footer container">
+      <p>
+        Challenge by <a class="footer__link" rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> - Coded by <a class="footer__link" rel="noopener" href="https://www.github.com/alberto-rj" target="_blank">Alberto Raúl José</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
