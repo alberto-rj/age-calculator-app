@@ -46,7 +46,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/alberto-rj/age-calculator-app)
-- Live Site URL: [GitHub Pages](https://alberto-rj/age-calculator-app.github.io)
+- Live Site URL: [GitHub Pages](https://alberto-rj.github.io/age-calculator-app)
 
 ## My process
 
