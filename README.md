@@ -71,5 +71,5 @@ How to calculate age in year, month and day.
 ## Author
 
 - Frontend Mentor - [@alberto-rj](https://www.frontendmentor.io/profile/alberto-rj)
-- GitHub - [Alberto Raúl José](https://www.github.com/alberto-rj.com)
+- GitHub - [@alberto-rj](https://www.github.com/alberto-rj.com)
 - Twitter - [@albertorauljose](https://www.twitter.com/albertorauljose)
